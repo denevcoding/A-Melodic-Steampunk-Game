@@ -1,2 +1,2 @@
 # A-Melodic-Steampunk-Game
-Hack and slash ritmico.
+Hack and slash ritmico. Scroll Vertical
