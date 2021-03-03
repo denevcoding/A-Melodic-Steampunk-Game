@@ -1,7 +1,121 @@
 fileFormatVersion: 2
 guid: 4ce4c755b9551460582bd5ceb73a7850
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 809276103771746220
+    second: ninja_anim_0
+  - first:
+      213: 7435374587959085926
+    second: ninja_anim_1
+  - first:
+      213: -6884209587110638114
+    second: ninja_anim_2
+  - first:
+      213: -7396129792334610051
+    second: ninja_anim_3
+  - first:
+      213: -7394244399308390058
+    second: ninja_anim_4
+  - first:
+      213: -4157156809780688105
+    second: ninja_anim_5
+  - first:
+      213: 8009298218614493219
+    second: ninja_anim_6
+  - first:
+      213: 2426266443760601080
+    second: ninja_anim_7
+  - first:
+      213: 8952031685519547727
+    second: ninja_anim_8
+  - first:
+      213: -7885395760283335545
+    second: ninja_anim_9
+  - first:
+      213: 4148192355428717559
+    second: ninja_anim_10
+  - first:
+      213: 1674056203535315395
+    second: ninja_anim_11
+  - first:
+      213: 6464837368902202659
+    second: ninja_anim_12
+  - first:
+      213: 153060292737049951
+    second: ninja_anim_13
+  - first:
+      213: 5114339866728161036
+    second: ninja_anim_14
+  - first:
+      213: 7004681655341460746
+    second: ninja_anim_15
+  - first:
+      213: -1901681789608339828
+    second: ninja_anim_16
+  - first:
+      213: -4563367341421144167
+    second: ninja_anim_17
+  - first:
+      213: -5112655989084467231
+    second: ninja_anim_18
+  - first:
+      213: -6648660868824788189
+    second: ninja_anim_19
+  - first:
+      213: 4686069200447890847
+    second: ninja_anim_20
+  - first:
+      213: 8244219741062576815
+    second: ninja_anim_21
+  - first:
+      213: -4081031082969148720
+    second: ninja_anim_22
+  - first:
+      213: 7520511222044908347
+    second: ninja_anim_23
+  - first:
+      213: -7515741085536970540
+    second: ninja_anim_24
+  - first:
+      213: -4742078628851822105
+    second: ninja_anim_25
+  - first:
+      213: 7284628304068048065
+    second: ninja_anim_26
+  - first:
+      213: -2630545207024600971
+    second: ninja_anim_27
+  - first:
+      213: -3021189725942670454
+    second: ninja_anim_28
+  - first:
+      213: -1117725141268066896
+    second: ninja_anim_29
+  - first:
+      213: -1657716861422240413
+    second: ninja_anim_30
+  - first:
+      213: 7142505431159212994
+    second: ninja_anim_31
+  - first:
+      213: -2170967332920969380
+    second: ninja_anim_32
+  - first:
+      213: 229369637359950620
+    second: ninja_anim_33
+  - first:
+      213: -8623441214571967431
+    second: ninja_anim_34
+  - first:
+      213: -319800627575891250
+    second: ninja_anim_35
+  - first:
+      213: -2124674143375940124
+    second: ninja_anim_36
+  - first:
+      213: -2747199755875833183
+    second: ninja_anim_37
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +146,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 2
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,7 +155,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,7 +179,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -77,7 +203,805 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ninja_anim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafe68224502b3b00800000000000000
+      internalID: 809276103771746220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b844f1bc1cf2760800000000000000
+      internalID: 7435374587959085926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd8ee8cadf5670a0800000000000000
+      internalID: -6884209587110638114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d714637e32bab5990800000000000000
+      internalID: -7396129792334610051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6514dcc25ed526990800000000000000
+      internalID: -7394244399308390058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b0d6538efce46c0800000000000000
+      internalID: -4157156809780688105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3209fa47b4eb62f60800000000000000
+      internalID: 8009298218614493219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f70dc6c974dba120800000000000000
+      internalID: 2426266443760601080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 276
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d1f6953610c3c70800000000000000
+      internalID: 8952031685519547727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784c0faa552719290800000000000000
+      internalID: -7885395760283335545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3d15d18f6519930800000000000000
+      internalID: 4148192355428717559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1f2c16f317b3710800000000000000
+      internalID: 1674056203535315395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_12
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3253618b557b7b950800000000000000
+      internalID: 6464837368902202659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_13
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f552fc97687cf1200800000000000000
+      internalID: 153060292737049951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_14
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f53f80309c9f640800000000000000
+      internalID: 5114339866728161036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0da2576ad0a53160800000000000000
+      internalID: 7004681655341460746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_16
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86d096ec7edb95e0800000000000000
+      internalID: -1901681789608339828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_17
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99759faa499aba0c0800000000000000
+      internalID: -4563367341421144167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_18
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 184
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efc8d747723c09b0800000000000000
+      internalID: -5112655989084467231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32398a97a263bb3a0800000000000000
+      internalID: -6648660868824788189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_20
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9568952c13480140800000000000000
+      internalID: 4686069200447890847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa3c4cbc2a596270800000000000000
+      internalID: 8244219741062576815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_22
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2db4e2ad34d57c0800000000000000
+      internalID: -4081031082969148720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_23
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b535f6c193e5860800000000000000
+      internalID: 7520511222044908347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_24
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d892c48d49b2b790800000000000000
+      internalID: -7515741085536970540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_25
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1d0569c90c03eb0800000000000000
+      internalID: -4742078628851822105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_26
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c47bb0d8d2381560800000000000000
+      internalID: 7284628304068048065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_27
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 92
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57831b9421d6e7bd0800000000000000
+      internalID: -2630545207024600971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b902283f39216d0800000000000000
+      internalID: -3021189725942670454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_29
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd813ee7ea0d70f0800000000000000
+      internalID: -1117725141268066896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_30
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d70c82c4b9ef8e0800000000000000
+      internalID: -1657716861422240413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_31
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb0b86d8d64f1360800000000000000
+      internalID: 7142505431159212994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_32
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57b44686bc2fd1e0800000000000000
+      internalID: -2170967332920969380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_33
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b991d4872ee2300800000000000000
+      internalID: 229369637359950620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_34
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c89ff77e1635880800000000000000
+      internalID: -8623441214571967431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_35
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca546a0607df8bf0800000000000000
+      internalID: -319800627575891250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_36
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5ae94af14a382e0800000000000000
+      internalID: -2124674143375940124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_anim_37
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 0
+        width: 73
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa2bf7906cffd9d0800000000000000
+      internalID: -2747199755875833183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
