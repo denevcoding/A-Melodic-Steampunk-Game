@@ -9,7 +9,7 @@ public class PlayerCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody = this.gameObject.AddComponent<Rigidbody2D>();
+        //rigidBody = this.gameObject.AddComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
