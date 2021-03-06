@@ -11,6 +11,6 @@ public class GameLogic : MyGenericSingleton<GameLogic>
     public void ExecutePlatformJump(float force)
     {
         platformQueue?.Invoke(force);
-    }
+    }//cloese ExecutePlatformJump
 
-}
+}//closes GameLogic

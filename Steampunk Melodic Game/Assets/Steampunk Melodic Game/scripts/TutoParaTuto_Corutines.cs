@@ -29,49 +29,41 @@ public class TutoParaTuto_Corutines : MonoBehaviour
     private Estado estado;
 
 
-
-
+    private void Awake()
+    {
+        renderer = gameObject.GetComponent<SpriteRenderer>();
+        physics = gameObject.GetComponent<Rigidbody2D>();
+        GameLogic.singleton.platformQueue += ReceiveForce;
+    }//closes Awake 
 
 
     void Start()
     {
-        renderer = gameObject.GetComponent<SpriteRenderer>();
-        physics = gameObject.GetComponent<Rigidbody2D>();
-
 
         finishRainbow = true;
         StartCoroutine(AnimateKirby());
-
-        GameLogic.singleton.platformQueue += ReceiveForce;
-
     }//closes Start 
 
 
 
-
+    #region Coroutine
 
     private void Update()
     {
 
-        //if (Input.GetKeyDown("space") && finishRainbow)
-        //{
-        //    finishRainbow = false;
-        //    StopCoroutine(AnimateKirby());
-        //}
-        //else if (Input.GetKeyDown("space") && !finishRainbow)
-        //{
-        //    finishRainbow = true;
-        //    StartCoroutine(AnimateKirby());
-        //}
+        if (Input.GetKeyDown("space") && finishRainbow)
+        {
+            finishRainbow = false;
+            StopCoroutine(AnimateKirby());
+        }
+        else if (Input.GetKeyDown("space") && !finishRainbow)
+        {
+            finishRainbow = true;
+            StartCoroutine(AnimateKirby());
+        }
 
     }//closes update 
 
-
-
-
-
-
-    #region Coroutine
 
     IEnumerator AnimateKirby()
     {
