@@ -10,7 +10,6 @@ public class PlatformCharge : MonoBehaviour
 
 
 
-
     private void Update()
     {
         forceProgress += 1 * Time.deltaTime;
