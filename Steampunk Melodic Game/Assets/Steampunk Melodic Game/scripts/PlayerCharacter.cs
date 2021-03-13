@@ -51,7 +51,9 @@ public class PlayerCharacter : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidBody.velocity = inputVector;        
+        rigidBody.velocity = inputVector;
+        Debug.Log("YVelocity " + rigidBody.velocity.y);
+        animatorPlayer.SetFloat("YVelocity", rigidBody.velocity.y);
     }
 
     private void Jump()
@@ -81,8 +83,9 @@ public class PlayerCharacter : MonoBehaviour
         }
 
         Debug.DrawRay(origin, Vector2.down * (boxCollider.bounds.extents.y + extraDistance), rayColor);
-        Debug.Log(rayCastHit.collider);        
+       // Debug.Log(rayCastHit.collider);
 
+        animatorPlayer.SetBool("isGrounded", rayCastHit.collider != null);
         return rayCastHit.collider != null;
     }
 

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 281995974}
   - component: {fileID: 281995973}
   - component: {fileID: 281995972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 1840161952}
   - component: {fileID: 1840161951}
   - component: {fileID: 1840161950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,9 +457,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3bda296cdfe10a4687d7e12539fba33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  force: 5
   speed: 3
+  isGrounded: 0
+  platformMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!212 &1983489087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -519,7 +521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983489085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.81, y: 3.5, z: 0}
+  m_LocalPosition: {x: -5.38, y: 3.84, z: 0}
   m_LocalScale: {x: 1.705465, y: 1.7054654, z: 1.7054654}
   m_Children: []
   m_Father: {fileID: 0}
