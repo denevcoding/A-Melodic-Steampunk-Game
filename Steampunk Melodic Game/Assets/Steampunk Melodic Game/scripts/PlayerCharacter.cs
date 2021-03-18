@@ -3,23 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+public enum CharacterStates
+{
+    idle = 0,
+    jumping = 1,
+    running = 2,
+    stunned = 3,
+    dead= 4,
+}
+
+
 public class PlayerCharacter : MonoBehaviour
 {
-
     private Rigidbody2D rigidBody;
     private BoxCollider2D boxCollider;
-    Animator animatorPlayer;
+    private Animator animatorPlayer;
 
-    [Tooltip("The amount of velocity to move the character")]
-    public float speed = 3.0f;    
-    Vector3 inputVector = Vector3.zero;
-    bool isRight = true;
+    private CharacterStates playerState;
 
     public bool isGrounded;
 
     [SerializeField]
     private LayerMask platformMask;
-
 
 
     void Awake() 
@@ -31,40 +36,20 @@ public class PlayerCharacter : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
-        
+    {
+        playerState = CharacterStates.idle;
     }
 
     // Update is called once per frame
     void Update()
     {
-        inputVector = new Vector3(Input.GetAxisRaw("Horizontal") * 5f, rigidBody.velocity.y, 0);
- 
-        animatorPlayer.SetFloat("XVelocity", Mathf.Abs(inputVector.x));
+        IsGrounded();
 
 
-        Jump();
-       
-
-        FlipCharacter();       
     }
 
-    private void FixedUpdate()
-    {
-        rigidBody.velocity = inputVector;
-        Debug.Log("YVelocity " + rigidBody.velocity.y);
-        animatorPlayer.SetFloat("YVelocity", rigidBody.velocity.y);
-    }
 
-    private void Jump()
-    {
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
-        {
-            rigidBody.AddForce(Vector3.up * 500.0f);
-        }
-    }
-
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         float extraDistance = 0.1f;
 
@@ -89,20 +74,41 @@ public class PlayerCharacter : MonoBehaviour
         return rayCastHit.collider != null;
     }
 
-
-    private void FlipCharacter()
+    #region Auxiliar funcs
+    public Rigidbody2D GetRigidBodie()
     {
-        if (inputVector.x < 0 && isRight || inputVector.x > 0 && !isRight)
-        {
-            isRight = !isRight;
-            transform.Rotate(new Vector3(0, 180, 0));
-        }
+        return rigidBody;
+    }
+    public BoxCollider2D GetColldier()
+    {
+        return boxCollider;
+    }
+    public Animator GetAnimator()
+    {
+        return animatorPlayer;
+    }
+    #endregion  
+
+
+
+    public CharacterStates GetPlayerState()
+    {
+        return playerState;
+    }
+    public void SetState(CharacterStates state)
+    {
+        playerState = state;
     }
 
 
     //event Called from collition by physic Manager 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision) 
     {
-        //Debug.Log("Chocó " + collision.gameObject.name);
+        int holi = 0;
     }
+
+
+  
+
+
 }
