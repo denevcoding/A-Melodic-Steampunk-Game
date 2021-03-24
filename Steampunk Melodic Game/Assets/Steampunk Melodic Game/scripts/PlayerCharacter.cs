@@ -19,6 +19,8 @@ public class PlayerCharacter : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Animator animatorPlayer;
 
+    public CameraHandler camera;
+
     private CharacterStates playerState;
 
     public bool isGrounded;
@@ -37,6 +39,7 @@ public class PlayerCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        camera = GameObject.Find("CM vcam1").GetComponent<CameraHandler>();
         playerState = CharacterStates.idle;
     }
 
@@ -44,8 +47,6 @@ public class PlayerCharacter : MonoBehaviour
     void Update()
     {
         IsGrounded();
-
-
     }
 
 
@@ -104,7 +105,10 @@ public class PlayerCharacter : MonoBehaviour
     //event Called from collition by physic Manager 
     public void OnCollisionEnter2D(Collision2D collision) 
     {
-        int holi = 0;
+        if (collision.gameObject.GetComponent<BallExperiment>() != null)
+        {
+            camera.CameraShake(1f, 2f);
+        }      
     }
 
 

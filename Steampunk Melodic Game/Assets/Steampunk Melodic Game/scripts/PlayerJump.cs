@@ -6,6 +6,7 @@ public class PlayerJump : MonoBehaviour
 {
     PlayerCharacter playerCharacter;
 
+
     [Tooltip("This number represents the force of the jump")]
     public float jumpForce;
 
@@ -44,11 +45,10 @@ public class PlayerJump : MonoBehaviour
     {
         if (playerCharacter.GetPlayerState() == CharacterStates.dead)
             return false;
-        if (playerCharacter.IsGrounded())
+        if (!playerCharacter.IsGrounded())
             return false;
 
         return true;
-
     }
 
     private void Jump()
@@ -56,7 +56,7 @@ public class PlayerJump : MonoBehaviour
         if (Input.GetKeyDown(jumpKey))
         {
             playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);
-
+            //camera.CameraShake(3, 1f);
         }
     }
 }
