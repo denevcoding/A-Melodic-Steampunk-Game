@@ -9,14 +9,14 @@ public enum CharacterStates
     jumping = 1,
     running = 2,
     stunned = 3,
-    dead= 4,
+    dead = 4,
 }
 
 
 public class PlayerCharacter : MonoBehaviour
 {
     private Rigidbody2D rigidBody;
-    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D boxCollider;
     private Animator animatorPlayer;
 
     public CameraHandler camera;
@@ -29,9 +29,9 @@ public class PlayerCharacter : MonoBehaviour
     private LayerMask platformMask;
 
 
-    void Awake() 
+    void Awake()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        boxCollider = GetComponent<CapsuleCollider2D>();
         rigidBody = GetComponent<Rigidbody2D>();
         animatorPlayer = GetComponent<Animator>();
     }
@@ -39,7 +39,7 @@ public class PlayerCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        camera = GameObject.Find("CM vcam1").GetComponent<CameraHandler>();
+        //camera = GameObject.Find("CM vcam1").GetComponent<CameraHandler>();
         playerState = CharacterStates.idle;
     }
 
@@ -65,11 +65,11 @@ public class PlayerCharacter : MonoBehaviour
         }
         else
         {
-            rayColor = Color.red;           
+            rayColor = Color.red;
         }
 
         Debug.DrawRay(origin, Vector2.down * (boxCollider.bounds.extents.y + extraDistance), rayColor);
-       // Debug.Log(rayCastHit.collider);
+        // Debug.Log(rayCastHit.collider);
 
         animatorPlayer.SetBool("isGrounded", rayCastHit.collider != null);
         return rayCastHit.collider != null;
@@ -80,7 +80,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         return rigidBody;
     }
-    public BoxCollider2D GetColldier()
+    public CapsuleCollider2D GetColldier()
     {
         return boxCollider;
     }
@@ -103,16 +103,14 @@ public class PlayerCharacter : MonoBehaviour
 
 
     //event Called from collition by physic Manager 
-    public void OnCollisionEnter2D(Collision2D collision) 
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<BallExperiment>() != null)
         {
             camera.CameraShake(1f, 2f);
-        }      
+        }
+
     }
-
-
-  
 
 
 }
