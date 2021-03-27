@@ -7,7 +7,11 @@ public class CharacterMovement : MonoBehaviour
     PlayerCharacter playerCharacter;
 
     [Tooltip("The amount of velocity to move the character")]
-    public float speed = 3.0f;
+    public float groundSpeed = 3.0f;
+    public float airSpeed = 3.0f;
+
+
+
     Vector3 inputVector = Vector3.zero;
     bool isRight = true;
 
@@ -29,7 +33,6 @@ public class CharacterMovement : MonoBehaviour
             return;
 
         Move();
-
         FlipCharacter();
     }
 
@@ -66,14 +69,15 @@ public class CharacterMovement : MonoBehaviour
     //When player is falling or not touiching the floor
     public void MoveAir() 
     {
-        inputVector = new Vector3(Input.GetAxisRaw("Horizontal") * 5f, playerCharacter.GetRigidBodie().velocity.y, 0);
+        inputVector = new Vector3(Input.GetAxisRaw("Horizontal") * airSpeed, playerCharacter.GetRigidBodie().velocity.y, 0);
         playerCharacter.GetAnimator().SetFloat("XVelocity", Mathf.Abs(inputVector.x));
     }
     public void MoveGround()
     {
         //When playert is touching the floor
-        inputVector = new Vector3(Input.GetAxisRaw("Horizontal") * 5f, playerCharacter.GetRigidBodie().velocity.y, 0);
-        playerCharacter.GetAnimator().SetFloat("XVelocity", Mathf.Abs(inputVector.x));        
+        inputVector = new Vector3(Input.GetAxisRaw("Horizontal") * groundSpeed, playerCharacter.GetRigidBodie().velocity.y, 0);
+        playerCharacter.GetAnimator().SetFloat("XVelocity", Mathf.Abs(inputVector.x));
+        playerCharacter.SetState(CharacterStates.running);
     }
 
     private void FlipCharacter()

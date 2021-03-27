@@ -43,10 +43,35 @@ public class PlayerCharacter : MonoBehaviour
         playerState = CharacterStates.idle;
     }
 
+    public void InitPlayer(Vector3 initPosition)
+    {
+        Vector3 position = initPosition;
+        position.z = 0;
+        this.transform.position = position;
+    }
+
     // Update is called once per frame
     void Update()
     {
         IsGrounded();
+
+
+        switch (playerState)
+        {
+            case CharacterStates.idle:
+
+                break;
+            case CharacterStates.jumping:
+                break;
+            case CharacterStates.running:
+                break;
+            case CharacterStates.stunned:
+                break;
+            case CharacterStates.dead:
+                break;
+            default:
+                break;
+        }
     }
 
 
@@ -109,7 +134,6 @@ public class PlayerCharacter : MonoBehaviour
         {
             camera.CameraShake(1f, 2f);
         }
-
     }
 
 

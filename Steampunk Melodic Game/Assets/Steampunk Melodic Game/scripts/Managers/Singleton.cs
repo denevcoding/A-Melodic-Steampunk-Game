@@ -39,7 +39,4 @@ public class MyGenericSingleton<T> : MonoBehaviour where T : Component
             Destroy(gameObject);
         }
     }
-
-
-
 }

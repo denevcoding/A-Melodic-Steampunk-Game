@@ -55,8 +55,7 @@ public class PlayerJump : MonoBehaviour
     {
         if (Input.GetKeyDown(jumpKey))
         {
-            playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);
-            //camera.CameraShake(3, 1f);
+            playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);           
         }
     }
 }
