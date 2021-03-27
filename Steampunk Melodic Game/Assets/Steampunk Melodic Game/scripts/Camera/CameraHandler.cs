@@ -10,6 +10,10 @@ public class CameraHandler : MonoBehaviour
 
     [Header("Move Settings")]
     public float verticalSeped;
+    public bool activateVerticalMovement;
+    [Header("Follow target settings")]
+    public bool activateFollowTarget;
+    public GameObject targetToFollow;
 
     [Header("Shake Settings")]
     public Transform camera;
@@ -34,7 +38,10 @@ public class CameraHandler : MonoBehaviour
     void Update()
     {
         MoveCamera();
-
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            activateFollowTarget = !activateFollowTarget;
+        }
         if (shakeTimer > 0)
         {
             CameraShaking();
@@ -44,9 +51,27 @@ public class CameraHandler : MonoBehaviour
 
     public void MoveCamera()
     {
+        if (!activateVerticalMovement)
+            return;
+
         Vector3 cameraPosition = this.transform.position;
         cameraPosition.y += verticalSeped * Time.deltaTime;
         transform.position = cameraPosition;
+    }
+
+    public void AttachFollowTarget()
+    {
+        if (activateFollowTarget)
+        {
+            levelCamera.m_Follow = targetToFollow.transform;
+        }
+    }
+    public void DetachFollowTarget()
+    {
+        if (!activateFollowTarget)
+        {
+            levelCamera.m_Follow = null;
+        }
     }
 
 
