@@ -39,8 +39,9 @@ public class CharacterMovement : MonoBehaviour
 
     public bool CheckPreconditions() 
     {
-        if (playerCharacter.GetPlayerState() == CharacterStates.dead)
+        if (playerCharacter.GetPlayerState() == CharacterStates.dead)            
             return false;
+           
 
         if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
             return false;
@@ -91,6 +92,8 @@ public class CharacterMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!CheckPreconditions())
+            return;
         playerCharacter.GetRigidBodie().velocity = inputVector;
         //Debug.Log("YVelocity " + playerCharacter.GetRigidBodie().velocity.y);
         playerCharacter.GetAnimator().SetFloat("YVelocity", playerCharacter.GetRigidBodie().velocity.y);

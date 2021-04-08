@@ -55,11 +55,11 @@ public class PlayerCharacter : MonoBehaviour
     {
         IsGrounded();
 
+        Debug.Log(rigidBody.velocity);
 
         switch (playerState)
         {
             case CharacterStates.idle:
-
                 break;
             case CharacterStates.jumping:
                 break;
@@ -67,7 +67,8 @@ public class PlayerCharacter : MonoBehaviour
                 break;
             case CharacterStates.stunned:
                 break;
-            case CharacterStates.dead:
+            case CharacterStates.dead:              
+                Debug.Log(rigidBody.velocity);
                 break;
             default:
                 break;
@@ -132,7 +133,18 @@ public class PlayerCharacter : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<BallExperiment>() != null)
         {
-            camera.CameraShake(1f, 2f);
+            animatorPlayer.SetTrigger("dying");
+
+            //rigidBody.simulated = false;
+            playerState = CharacterStates.dead;
+
+            rigidBody.angularVelocity = 0f;
+            rigidBody.velocity = Vector2.zero;
+       
+
+            Destroy(collision.gameObject); 
+
+          //  camera.CameraShake(1f, 2f);
         }
     }
 
