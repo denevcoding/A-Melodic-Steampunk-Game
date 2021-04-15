@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 52f1efd8f7aff004380aca927622b999
+guid: 082f797e0584bfd4795c1749b1a17c84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7661645122817757759
-    second: ninjaJumping_0
+      213: -2837264866062569130
+    second: GroundThrow_0
   - first:
-      213: 7472759215439788353
-    second: ninjaJumping_1
+      213: -3037356075594272298
+    second: GroundThrow_1
   - first:
-      213: -9036211240487486642
-    second: ninjaJumping_2
+      213: 1240348660897917928
+    second: GroundThrow_2
   - first:
-      213: -5429965189263826976
-    second: ninjaJumping_3
+      213: 4429815030221152352
+    second: GroundThrow_3
   - first:
-      213: 3875002491623327216
-    second: ninjaJumping_4
+      213: 4288578458924966828
+    second: GroundThrow_4
   - first:
-      213: -4900639462847020484
-    second: ninjaJumping_5
+      213: -6258409058631200343
+    second: GroundThrow_5
   - first:
-      213: -2983386885795343793
-    second: ninjaJumping_6
+      213: 4668239574026761817
+    second: GroundThrow_6
   - first:
-      213: -6024504796834625440
-    second: ninjaJumping_7
+      213: 30359419374261663
+    second: GroundThrow_7
   - first:
-      213: -9182777682310482750
-    second: ninjaJumping_8
+      213: -7966319645523309085
+    second: GroundThrow_8
   - first:
-      213: -3303874441504152680
-    second: ninjaJumping_9
+      213: -2702040881155516448
+    second: GroundThrow_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninjaJumping_0
+      name: GroundThrow_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3218a465a1a35a60800000000000000
-      internalID: 7661645122817757759
+      spriteID: 651f4a403a200a8d0800000000000000
+      internalID: -2837264866062569130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_1
+      name: GroundThrow_1
       rect:
         serializedVersion: 2
-        x: 188
+        x: 198
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 149b0500ae294b760800000000000000
-      internalID: 7472759215439788353
+      spriteID: 6d134d9edb429d5d0800000000000000
+      internalID: -3037356075594272298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_2
+      name: GroundThrow_2
       rect:
         serializedVersion: 2
-        x: 376
+        x: 396
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4bf95fa0cde89280800000000000000
-      internalID: -9036211240487486642
+      spriteID: 8eba372198a963110800000000000000
+      internalID: 1240348660897917928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_3
+      name: GroundThrow_3
       rect:
         serializedVersion: 2
-        x: 564
+        x: 594
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ef5137fd63e4a4b0800000000000000
-      internalID: -5429965189263826976
+      spriteID: 060a401cc4dd97d30800000000000000
+      internalID: 4429815030221152352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_4
+      name: GroundThrow_4
       rect:
         serializedVersion: 2
-        x: 752
+        x: 792
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f546f84c36c6c530800000000000000
-      internalID: 3875002491623327216
+      spriteID: ca36d93f267148b30800000000000000
+      internalID: 4288578458924966828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_5
+      name: GroundThrow_5
       rect:
         serializedVersion: 2
-        x: 940
+        x: 990
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c320ebc8f5e6dfbb0800000000000000
-      internalID: -4900639462847020484
+      spriteID: 9a15331ae1aa529a0800000000000000
+      internalID: -6258409058631200343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_6
+      name: GroundThrow_6
       rect:
         serializedVersion: 2
-        x: 1128
+        x: 1188
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f421c9c1f61e896d0800000000000000
-      internalID: -2983386885795343793
+      spriteID: 9563940c82be8c040800000000000000
+      internalID: 4668239574026761817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_7
+      name: GroundThrow_7
       rect:
         serializedVersion: 2
-        x: 1316
+        x: 1386
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +282,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06809057ec8a46ca0800000000000000
-      internalID: -6024504796834625440
+      spriteID: f95d3672bbbdb6000800000000000000
+      internalID: 30359419374261663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_8
+      name: GroundThrow_8
       rect:
         serializedVersion: 2
-        x: 1504
+        x: 1584
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c4bf72b958309080800000000000000
-      internalID: -9182777682310482750
+      spriteID: 3ed0e516d72f17190800000000000000
+      internalID: -7966319645523309085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_9
+      name: GroundThrow_9
       rect:
         serializedVersion: 2
-        x: 1692
+        x: 1782
         y: 0
-        width: 188.8
-        height: 245
+        width: 198
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,8 +324,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89327ab33b74622d0800000000000000
-      internalID: -3303874441504152680
+      spriteID: 0e75426722c608ad0800000000000000
+      internalID: -2702040881155516448
       vertices: []
       indices: 
       edges: []

@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 52f1efd8f7aff004380aca927622b999
+guid: 02d3eb70aa64c1848b721e879f57ea2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7661645122817757759
-    second: ninjaJumping_0
+      213: -2365416173362559611
+    second: GroundAttack_0
   - first:
-      213: 7472759215439788353
-    second: ninjaJumping_1
+      213: 695761925282249177
+    second: GroundAttack_1
   - first:
-      213: -9036211240487486642
-    second: ninjaJumping_2
+      213: -8452720845006743185
+    second: GroundAttack_2
   - first:
-      213: -5429965189263826976
-    second: ninjaJumping_3
+      213: -7680710829998709689
+    second: GroundAttack_3
   - first:
-      213: 3875002491623327216
-    second: ninjaJumping_4
+      213: 8076860385367568807
+    second: GroundAttack_4
   - first:
-      213: -4900639462847020484
-    second: ninjaJumping_5
+      213: -2353876196052387059
+    second: GroundAttack_5
   - first:
-      213: -2983386885795343793
-    second: ninjaJumping_6
+      213: 5822473572259291551
+    second: GroundAttack_6
   - first:
-      213: -6024504796834625440
-    second: ninjaJumping_7
+      213: 2381264534434314423
+    second: GroundAttack_7
   - first:
-      213: -9182777682310482750
-    second: ninjaJumping_8
+      213: -7383069272391971967
+    second: GroundAttack_8
   - first:
-      213: -3303874441504152680
-    second: ninjaJumping_9
+      213: -1545549879410661919
+    second: GroundAttack_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninjaJumping_0
+      name: GroundAttack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3218a465a1a35a60800000000000000
-      internalID: 7661645122817757759
+      spriteID: 585c2c8d58a5c2fd0800000000000000
+      internalID: -2365416173362559611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_1
+      name: GroundAttack_1
       rect:
         serializedVersion: 2
-        x: 188
+        x: 281
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 149b0500ae294b760800000000000000
-      internalID: 7472759215439788353
+      spriteID: 9d9b0b4e8c7d7a900800000000000000
+      internalID: 695761925282249177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_2
+      name: GroundAttack_2
       rect:
         serializedVersion: 2
-        x: 376
+        x: 562
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4bf95fa0cde89280800000000000000
-      internalID: -9036211240487486642
+      spriteID: f6955d70d27e1ba80800000000000000
+      internalID: -8452720845006743185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_3
+      name: GroundAttack_3
       rect:
         serializedVersion: 2
-        x: 564
+        x: 843
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ef5137fd63e4a4b0800000000000000
-      internalID: -5429965189263826976
+      spriteID: 7446e6bb132a86590800000000000000
+      internalID: -7680710829998709689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_4
+      name: GroundAttack_4
       rect:
         serializedVersion: 2
-        x: 752
+        x: 1124
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f546f84c36c6c530800000000000000
-      internalID: 3875002491623327216
+      spriteID: 7a1324a3ab5c61070800000000000000
+      internalID: 8076860385367568807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_5
+      name: GroundAttack_5
       rect:
         serializedVersion: 2
-        x: 940
+        x: 1405
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c320ebc8f5e6dfbb0800000000000000
-      internalID: -4900639462847020484
+      spriteID: d0bbc01321a555fd0800000000000000
+      internalID: -2353876196052387059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_6
+      name: GroundAttack_6
       rect:
         serializedVersion: 2
-        x: 1128
+        x: 1686
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f421c9c1f61e896d0800000000000000
-      internalID: -2983386885795343793
+      spriteID: f916d9c7dd49dc050800000000000000
+      internalID: 5822473572259291551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_7
+      name: GroundAttack_7
       rect:
         serializedVersion: 2
-        x: 1316
+        x: 1967
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +282,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06809057ec8a46ca0800000000000000
-      internalID: -6024504796834625440
+      spriteID: 7b871334a73fb0120800000000000000
+      internalID: 2381264534434314423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_8
+      name: GroundAttack_8
       rect:
         serializedVersion: 2
-        x: 1504
+        x: 2248
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c4bf72b958309080800000000000000
-      internalID: -9182777682310482750
+      spriteID: 18b89fa2d911a8990800000000000000
+      internalID: -7383069272391971967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_9
+      name: GroundAttack_9
       rect:
         serializedVersion: 2
-        x: 1692
+        x: 2529
         y: 0
-        width: 188.8
-        height: 245
+        width: 281
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,8 +324,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89327ab33b74622d0800000000000000
-      internalID: -3303874441504152680
+      spriteID: 1e56417c29a1d8ae0800000000000000
+      internalID: -1545549879410661919
       vertices: []
       indices: 
       edges: []

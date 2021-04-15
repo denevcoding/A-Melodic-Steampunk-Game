@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 52f1efd8f7aff004380aca927622b999
+guid: 3c80ffbbb551f634fbb236cd2f87e6fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7661645122817757759
-    second: ninjaJumping_0
+      213: -8330544284881212024
+    second: ninjaSlide_0
   - first:
-      213: 7472759215439788353
-    second: ninjaJumping_1
+      213: -164388989821091855
+    second: ninjaSlide_1
   - first:
-      213: -9036211240487486642
-    second: ninjaJumping_2
+      213: 470508608030488192
+    second: ninjaSlide_2
   - first:
-      213: -5429965189263826976
-    second: ninjaJumping_3
+      213: 707275449516640445
+    second: ninjaSlide_3
   - first:
-      213: 3875002491623327216
-    second: ninjaJumping_4
+      213: -8737664802454342596
+    second: ninjaSlide_4
   - first:
-      213: -4900639462847020484
-    second: ninjaJumping_5
+      213: 6901202871966349264
+    second: ninjaSlide_5
   - first:
-      213: -2983386885795343793
-    second: ninjaJumping_6
+      213: 3914936541846973865
+    second: ninjaSlide_6
   - first:
-      213: -6024504796834625440
-    second: ninjaJumping_7
+      213: -1134050057796275144
+    second: ninjaSlide_7
   - first:
-      213: -9182777682310482750
-    second: ninjaJumping_8
+      213: 4353223940277030906
+    second: ninjaSlide_8
   - first:
-      213: -3303874441504152680
-    second: ninjaJumping_9
+      213: -1347491712282382113
+    second: ninjaSlide_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninjaJumping_0
+      name: ninjaSlide_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3218a465a1a35a60800000000000000
-      internalID: 7661645122817757759
+      spriteID: 88daef92c16f36c80800000000000000
+      internalID: -8330544284881212024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_1
+      name: ninjaSlide_1
       rect:
         serializedVersion: 2
-        x: 188
+        x: 195
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 149b0500ae294b760800000000000000
-      internalID: 7472759215439788353
+      spriteID: 1ff7ab0b519f7bdf0800000000000000
+      internalID: -164388989821091855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_2
+      name: ninjaSlide_2
       rect:
         serializedVersion: 2
-        x: 376
+        x: 390
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4bf95fa0cde89280800000000000000
-      internalID: -9036211240487486642
+      spriteID: 086bb6d0615978600800000000000000
+      internalID: 470508608030488192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_3
+      name: ninjaSlide_3
       rect:
         serializedVersion: 2
-        x: 564
+        x: 585
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ef5137fd63e4a4b0800000000000000
-      internalID: -5429965189263826976
+      spriteID: db84bc6264fb0d900800000000000000
+      internalID: 707275449516640445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_4
+      name: ninjaSlide_4
       rect:
         serializedVersion: 2
-        x: 752
+        x: 780
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f546f84c36c6c530800000000000000
-      internalID: 3875002491623327216
+      spriteID: c34764308249db680800000000000000
+      internalID: -8737664802454342596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_5
+      name: ninjaSlide_5
       rect:
         serializedVersion: 2
-        x: 940
+        x: 975
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c320ebc8f5e6dfbb0800000000000000
-      internalID: -4900639462847020484
+      spriteID: 0d7b57aa27ff5cf50800000000000000
+      internalID: 6901202871966349264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_6
+      name: ninjaSlide_6
       rect:
         serializedVersion: 2
-        x: 1128
+        x: 1170
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f421c9c1f61e896d0800000000000000
-      internalID: -2983386885795343793
+      spriteID: 9ad2cf6ea06a45630800000000000000
+      internalID: 3914936541846973865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_7
+      name: ninjaSlide_7
       rect:
         serializedVersion: 2
-        x: 1316
+        x: 1365
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +282,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06809057ec8a46ca0800000000000000
-      internalID: -6024504796834625440
+      spriteID: 834ba8b1b7b0340f0800000000000000
+      internalID: -1134050057796275144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_8
+      name: ninjaSlide_8
       rect:
         serializedVersion: 2
-        x: 1504
+        x: 1560
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c4bf72b958309080800000000000000
-      internalID: -9182777682310482750
+      spriteID: aff40fbfb12c96c30800000000000000
+      internalID: 4353223940277030906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninjaJumping_9
+      name: ninjaSlide_9
       rect:
         serializedVersion: 2
-        x: 1692
+        x: 1755
         y: 0
-        width: 188.8
-        height: 245
+        width: 195
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,8 +324,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89327ab33b74622d0800000000000000
-      internalID: -3303874441504152680
+      spriteID: fd030af4d6fbc4de0800000000000000
+      internalID: -1347491712282382113
       vertices: []
       indices: 
       edges: []
