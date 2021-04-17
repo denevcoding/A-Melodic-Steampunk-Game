@@ -16,15 +16,15 @@ public class BallExperiment : MonoBehaviour
         
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        int holi = 0;
-        Debug.Log("object triggered this");
-    }
+    //public void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    int holi = 0;
+    //    Debug.Log("object triggered this");
+    //}
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        //int holi = 0;
-        //Debug.Log("object triggered this");
-    }
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    //int holi = 0;
+    //    //Debug.Log("object triggered this");
+    //}
 }

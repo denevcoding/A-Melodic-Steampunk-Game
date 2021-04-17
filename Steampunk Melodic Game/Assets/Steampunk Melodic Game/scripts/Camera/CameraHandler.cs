@@ -41,6 +41,15 @@ public class CameraHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             activateFollowTarget = !activateFollowTarget;
+
+            if (activateFollowTarget)
+            {
+                AttachFollowTarget();
+            }
+            else
+            {
+                DetachFollowTarget();
+            }
         }
         if (shakeTimer > 0)
         {
@@ -61,17 +70,15 @@ public class CameraHandler : MonoBehaviour
 
     public void AttachFollowTarget()
     {
-        if (activateFollowTarget)
-        {
-            levelCamera.m_Follow = targetToFollow.transform;
-        }
+     
+         levelCamera.m_Follow = targetToFollow.transform;
+        
     }
     public void DetachFollowTarget()
     {
-        if (!activateFollowTarget)
-        {
-            levelCamera.m_Follow = null;
-        }
+        
+        levelCamera.m_Follow = null;
+        
     }
 
 
