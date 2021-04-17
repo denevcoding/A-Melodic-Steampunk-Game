@@ -55,7 +55,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         IsGrounded();
 
-        Debug.Log(rigidBody.velocity);
+        //Debug.Log(rigidBody.velocity);
 
         switch (playerState)
         {
@@ -68,7 +68,7 @@ public class PlayerCharacter : MonoBehaviour
             case CharacterStates.stunned:
                 break;
             case CharacterStates.dead:              
-                Debug.Log(rigidBody.velocity);
+                //Debug.Log(rigidBody.velocity);
                 break;
             default:
                 break;

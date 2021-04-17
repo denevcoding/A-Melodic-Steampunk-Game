@@ -11,7 +11,7 @@ public class GameLogic : MyGenericSingleton<GameLogic>
 
     public GameObject playerPrefab;
     public Transform playerSpawn;
-
+    public GameObject ninjaPlayer;
 
     public void ExecutePlatformJump(float force)
     {
@@ -22,8 +22,8 @@ public class GameLogic : MyGenericSingleton<GameLogic>
 
     public void Start()
     {
-       GameObject playerChar = Instantiate(playerPrefab, playerSpawn.position, Quaternion.identity);         
-       playerChar.GetComponent<PlayerCharacter>().InitPlayer(playerSpawn.position);  
+       ninjaPlayer = Instantiate(playerPrefab, playerSpawn.position, Quaternion.identity);         
+       ninjaPlayer.GetComponent<PlayerCharacter>().InitPlayer(playerSpawn.position);  
     }
 
 }//closes GameLogic

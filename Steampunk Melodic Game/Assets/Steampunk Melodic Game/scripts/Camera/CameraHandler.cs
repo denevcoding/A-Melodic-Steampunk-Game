@@ -74,6 +74,12 @@ public class CameraHandler : MonoBehaviour
          levelCamera.m_Follow = targetToFollow.transform;
         
     }
+    public void AttachFollowTarget(Transform targetTransform)
+    {
+
+        levelCamera.m_Follow = targetTransform;
+
+    }
     public void DetachFollowTarget()
     {
         
