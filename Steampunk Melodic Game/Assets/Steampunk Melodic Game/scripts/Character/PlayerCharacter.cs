@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 
@@ -23,7 +24,7 @@ public class PlayerCharacter : MonoBehaviour
 
     public CameraHandler camera;
 
-    private CharacterStates playerState;
+    public CharacterStates playerState;
 
     public bool isGrounded;
 
@@ -63,6 +64,7 @@ public class PlayerCharacter : MonoBehaviour
     void Update()
     {
         IsGrounded();
+       
 
         //Debug.Log(rigidBody.velocity);
 
@@ -78,6 +80,9 @@ public class PlayerCharacter : MonoBehaviour
                 break;
             case CharacterStates.dead:              
                 //Debug.Log(rigidBody.velocity);
+                break;
+            case CharacterStates.falling:
+               
                 break;
             default:
                 break;
@@ -159,6 +164,12 @@ public class PlayerCharacter : MonoBehaviour
     public void FixedUpdate()
     {
         animatorPlayer.SetFloat("YVelocity", rigidBody.velocity.y);
+
+        //if (rigidBody.velocity.y < 0 && playerState != CharacterStates.jumping && playerState != CharacterStates.flying)
+        //{    
+
+        //    SetState(CharacterStates.falling);
+        //}
     }
 
 }

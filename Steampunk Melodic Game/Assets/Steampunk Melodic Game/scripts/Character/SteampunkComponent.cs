@@ -18,6 +18,9 @@ public class SteampunkComponent : MonoBehaviour
         if (playerCharacter.GetPlayerState() == CharacterStates.dead)
             return false;
 
+        if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
+            return false;
+
         return true;
     
     }

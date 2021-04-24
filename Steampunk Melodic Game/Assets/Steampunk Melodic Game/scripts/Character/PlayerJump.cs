@@ -47,9 +47,6 @@ public class PlayerJump : SteampunkComponent
             return false;
         else
         {
-            if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
-                return false;
-
             if (!playerCharacter.IsGrounded())
                 return false;
         }
@@ -61,9 +58,10 @@ public class PlayerJump : SteampunkComponent
     {
         if (Input.GetKeyDown(jumpKey))
         {
+            playerCharacter.SetState(CharacterStates.jumping);
             playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);
             animatorPlayer.SetBool("jumping", true);
-            playerCharacter.SetState(CharacterStates.jumping);
+            
         }
     }
     private void FixedUpdate()
@@ -71,7 +69,7 @@ public class PlayerJump : SteampunkComponent
         if (rigidBodyPlayer.velocity.y < 0)
         {
             animatorPlayer.SetBool("jumping", false);
-
+            playerCharacter.SetState(CharacterStates.falling);
         }
     }
 }

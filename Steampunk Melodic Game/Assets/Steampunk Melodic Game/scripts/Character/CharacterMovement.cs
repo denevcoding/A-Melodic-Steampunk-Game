@@ -34,14 +34,8 @@ public class CharacterMovement : SteampunkComponent
 
     public override bool CheckPreconditions() 
     {
-
         if (base.CheckPreconditions() == false)
-            return false;
-        else
-        {
-            if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
-                return false;
-        }  
+            return false;      
 
         return true;
     
@@ -53,7 +47,8 @@ public class CharacterMovement : SteampunkComponent
         {
             // on the flooe
             MoveGround();
-            playerCharacter.SetState(CharacterStates.moving);
+          
+            //playerCharacter.SetState(CharacterStates.moving);
         }
         else
         {
@@ -74,8 +69,7 @@ public class CharacterMovement : SteampunkComponent
     {
         //When playert is touching the floor
         inputVector = new Vector3(Input.GetAxisRaw("Horizontal") * groundSpeed, playerCharacter.GetRigidBodie().velocity.y, 0);
-        playerCharacter.GetAnimator().SetFloat("XVelocity", Mathf.Abs(inputVector.x));
-        playerCharacter.SetState(CharacterStates.moving);
+        playerCharacter.GetAnimator().SetFloat("XVelocity", Mathf.Abs(inputVector.x));        
     }
 
     private void FlipCharacter()
@@ -92,6 +86,6 @@ public class CharacterMovement : SteampunkComponent
         if (!CheckPreconditions())
             return;
         playerCharacter.GetRigidBodie().velocity = inputVector;
-        //Debug.Log("YVelocity " + playerCharacter.GetRigidBodie().velocity.y);
+      
     }
 }
