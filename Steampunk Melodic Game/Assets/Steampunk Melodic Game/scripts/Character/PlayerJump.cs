@@ -63,7 +63,7 @@ public class PlayerJump : SteampunkComponent
         {
             playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);
             animatorPlayer.SetBool("jumping", true);
-            
+            playerCharacter.SetState(CharacterStates.jumping);
         }
     }
     private void FixedUpdate()
