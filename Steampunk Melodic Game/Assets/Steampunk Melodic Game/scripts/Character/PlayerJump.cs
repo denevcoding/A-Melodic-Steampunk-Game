@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 {
     PlayerCharacter playerCharacter;
-
+    Animator animatorPlayer;
+    Rigidbody2D rigidBodyPlayer;
 
     [Tooltip("This number represents the force of the jump")]
     public float jumpForce;
@@ -23,6 +24,8 @@ public class PlayerJump : MonoBehaviour
     {
 
         playerCharacter = GetComponent<PlayerCharacter>();
+        animatorPlayer = GetComponent<Animator>();
+        rigidBodyPlayer = GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
@@ -55,7 +58,16 @@ public class PlayerJump : MonoBehaviour
     {
         if (Input.GetKeyDown(jumpKey))
         {
-            playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);           
+            playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);
+            animatorPlayer.SetBool("jumping", true);
+            
+        }
+    }
+    private void FixedUpdate()
+    {
+        if (rigidBodyPlayer.velocity.y < 0)
+        {
+            animatorPlayer.SetBool("jumping", false);
         }
     }
 }
