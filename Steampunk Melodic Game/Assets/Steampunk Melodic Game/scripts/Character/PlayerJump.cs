@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerJump : MonoBehaviour
-{
-    PlayerCharacter playerCharacter;
+public class PlayerJump : SteampunkComponent
+{    
     Animator animatorPlayer;
     Rigidbody2D rigidBodyPlayer;
 
@@ -22,20 +21,18 @@ public class PlayerJump : MonoBehaviour
 
     private void Awake()
     {
-
-        playerCharacter = GetComponent<PlayerCharacter>();
         animatorPlayer = GetComponent<Animator>();
         rigidBodyPlayer = GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
         if (!CheckPreconditions())
             return;
@@ -44,12 +41,18 @@ public class PlayerJump : MonoBehaviour
     }
 
 
-    public bool CheckPreconditions()
+    public override bool CheckPreconditions()
     {
-        if (playerCharacter.GetPlayerState() == CharacterStates.dead)
+        if (base.CheckPreconditions() == false)
             return false;
-        if (!playerCharacter.IsGrounded())
-            return false;
+        else
+        {
+            if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
+                return false;
+
+            if (!playerCharacter.IsGrounded())
+                return false;
+        }
 
         return true;
     }
@@ -68,6 +71,7 @@ public class PlayerJump : MonoBehaviour
         if (rigidBodyPlayer.velocity.y < 0)
         {
             animatorPlayer.SetBool("jumping", false);
+
         }
     }
 }

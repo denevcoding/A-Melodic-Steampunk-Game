@@ -34,6 +34,13 @@ public class PlayerCharacter : MonoBehaviour
         boxCollider = GetComponent<CapsuleCollider2D>();
         rigidBody = GetComponent<Rigidbody2D>();
         animatorPlayer = GetComponent<Animator>();
+
+        SteampunkComponent[] ninjaComponents = GetComponents<SteampunkComponent>();
+
+        foreach (SteampunkComponent steamComp in ninjaComponents)
+        {
+            steamComp.playerCharacter = this;
+        }
     }
 
     // Start is called before the first frame update

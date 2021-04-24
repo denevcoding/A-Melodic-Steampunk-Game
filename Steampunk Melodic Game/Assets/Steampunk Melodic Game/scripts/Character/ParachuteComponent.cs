@@ -2,28 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParachuteComponent : MonoBehaviour
+public class ParachuteComponent : SteampunkComponent
 {
     Animator animatorPlayer;
-    PlayerCharacter playerCharacter;
     Rigidbody2D rigidbodyCharacter;
+
     // Start is called before the first frame update
     private void Awake()
     {
-        animatorPlayer = GetComponent<Animator>();
-        playerCharacter = GetComponent<PlayerCharacter>();
+        animatorPlayer = GetComponent<Animator>();        
         rigidbodyCharacter = GetComponent<Rigidbody2D>();
     }
-    void Start()
+    public override void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
-        
-        if (Input.GetMouseButton(1) && playerCharacter.isGrounded==false)
+        if (!CheckPreconditions())
+            return;
+
+        if (Input.GetMouseButton(1))
         {
             animatorPlayer.SetBool("parachute", true);
             rigidbodyCharacter.gravityScale = 1;
@@ -33,5 +34,21 @@ public class ParachuteComponent : MonoBehaviour
             animatorPlayer.SetBool("parachute", false);
             rigidbodyCharacter.gravityScale = 5;
         }
+    }
+
+    public override bool CheckPreconditions()
+    {
+        if (base.CheckPreconditions() == false)
+            return false;
+        else
+        {
+            if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
+                return false;
+
+            if (playerCharacter.isGrounded == true)
+                return false;
+        }
+
+        return true;
     }
 }

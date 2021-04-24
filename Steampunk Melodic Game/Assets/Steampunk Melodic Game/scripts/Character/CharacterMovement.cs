@@ -2,32 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovement : SteampunkComponent
 {
-    PlayerCharacter playerCharacter;
-
     [Tooltip("The amount of velocity to move the character")]
     public float groundSpeed = 3.0f;
     public float airSpeed = 3.0f;
-
 
 
     Vector3 inputVector = Vector3.zero;
     bool isRight = true;
 
     private void Awake()
-    {
-        playerCharacter = GetComponent<PlayerCharacter>();
+    {        
     }
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
         if (!CheckPreconditions())
             return;
@@ -37,14 +32,16 @@ public class CharacterMovement : MonoBehaviour
     }
 
 
-    public bool CheckPreconditions() 
+    public override bool CheckPreconditions() 
     {
-        if (playerCharacter.GetPlayerState() == CharacterStates.dead)            
-            return false;
-           
 
-        if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
+        if (base.CheckPreconditions() == false)
             return false;
+        else
+        {
+            if (playerCharacter.GetPlayerState() == CharacterStates.stunned)
+                return false;
+        }  
 
         return true;
     
