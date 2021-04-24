@@ -7,9 +7,11 @@ public enum CharacterStates
 {
     idle = 0,
     jumping = 1,
-    running = 2,
+    moving = 2,
     stunned = 3,
     dead = 4,
+    falling = 5,
+    flying = 6,
 }
 
 
@@ -63,7 +65,7 @@ public class PlayerCharacter : MonoBehaviour
                 break;
             case CharacterStates.jumping:
                 break;
-            case CharacterStates.running:
+            case CharacterStates.moving:
                 break;
             case CharacterStates.stunned:
                 break;
@@ -147,6 +149,9 @@ public class PlayerCharacter : MonoBehaviour
           //  camera.CameraShake(1f, 2f);
         }
     }
-
+    public void FixedUpdate()
+    {
+        animatorPlayer.SetFloat("YVelocity", rigidBody.velocity.y);
+    }
 
 }

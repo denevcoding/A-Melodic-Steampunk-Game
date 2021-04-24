@@ -60,7 +60,7 @@ public class PlayerJump : MonoBehaviour
         {
             playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);
             animatorPlayer.SetBool("jumping", true);
-            
+            playerCharacter.SetState(CharacterStates.jumping);
         }
     }
     private void FixedUpdate()

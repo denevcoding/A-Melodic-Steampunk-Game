@@ -56,7 +56,7 @@ public class CharacterMovement : MonoBehaviour
         {
             // on the flooe
             MoveGround();
-            playerCharacter.SetState(CharacterStates.running);
+            playerCharacter.SetState(CharacterStates.moving);
         }
         else
         {
@@ -78,7 +78,7 @@ public class CharacterMovement : MonoBehaviour
         //When playert is touching the floor
         inputVector = new Vector3(Input.GetAxisRaw("Horizontal") * groundSpeed, playerCharacter.GetRigidBodie().velocity.y, 0);
         playerCharacter.GetAnimator().SetFloat("XVelocity", Mathf.Abs(inputVector.x));
-        playerCharacter.SetState(CharacterStates.running);
+        playerCharacter.SetState(CharacterStates.moving);
     }
 
     private void FlipCharacter()
@@ -96,6 +96,5 @@ public class CharacterMovement : MonoBehaviour
             return;
         playerCharacter.GetRigidBodie().velocity = inputVector;
         //Debug.Log("YVelocity " + playerCharacter.GetRigidBodie().velocity.y);
-        playerCharacter.GetAnimator().SetFloat("YVelocity", playerCharacter.GetRigidBodie().velocity.y);
     }
 }
