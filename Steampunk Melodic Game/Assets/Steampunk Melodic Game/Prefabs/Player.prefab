@@ -102,6 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
+  playerState: 0
+  jumpKey: 32
   isGrounded: 0
   platformMask:
     serializedVersion: 2
@@ -118,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521feabb0f84a624182befad3aa2bb3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 0}
   groundSpeed: 5.5
   airSpeed: 5
 --- !u!114 &3509200185610043387
@@ -132,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb6a974b30769542bdf8efe7330e4d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 0}
   jumpForce: 1200
   activateDoubleJump: 0
   jumpKey: 32
@@ -204,3 +208,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e3972f15c6540843a54921b8f911bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 0}

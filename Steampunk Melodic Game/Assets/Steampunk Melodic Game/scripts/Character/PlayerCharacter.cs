@@ -8,7 +8,8 @@ public enum CharacterStates
 {
     idle = 0,
     jumping = 1,
-    moving = 2,
+    Running = 2,
+
     stunned = 3,
     dead = 4,
     falling = 5,
@@ -22,11 +23,20 @@ public class PlayerCharacter : MonoBehaviour
     private CapsuleCollider2D boxCollider;
     private Animator animatorPlayer;
 
-    public CameraHandler camera;
+    private PlayerJump jumpComponent;
+    private ParachuteComponent parachuteComponent;
 
+    public CameraHandler camera;
     public CharacterStates playerState;
 
+
+    [SerializeField]
+    private KeyCode jumpKey;
+    private KeyCode parachuteKey;
+
+
     public bool isGrounded;
+
 
     [SerializeField]
     private LayerMask platformMask;
@@ -34,12 +44,20 @@ public class PlayerCharacter : MonoBehaviour
 
     void Awake()
     {
+        jumpComponent = GetComponent<PlayerJump>();
+        parachuteComponent = GetComponent<ParachuteComponent>();
+
         boxCollider = GetComponent<CapsuleCollider2D>();
         rigidBody = GetComponent<Rigidbody2D>();
         animatorPlayer = GetComponent<Animator>();
 
-        SteampunkComponent[] ninjaComponents = GetComponents<SteampunkComponent>();
+        BaseSMB[] bsmbs = animatorPlayer.GetBehaviours<BaseSMB>();
+        foreach (BaseSMB smb in bsmbs)
+        {
+            smb.pCharacter = this;
+        }
 
+        SteampunkComponent[] ninjaComponents = GetComponents<SteampunkComponent>();
         foreach (SteampunkComponent steamComp in ninjaComponents)
         {
             steamComp.playerCharacter = this;
@@ -64,29 +82,38 @@ public class PlayerCharacter : MonoBehaviour
     void Update()
     {
         IsGrounded();
-       
 
-        //Debug.Log(rigidBody.velocity);
-
-        switch (playerState)
+        if (Input.GetKeyDown(jumpKey))
         {
-            case CharacterStates.idle:
-                break;
-            case CharacterStates.jumping:
-                break;
-            case CharacterStates.moving:
-                break;
-            case CharacterStates.stunned:
-                break;
-            case CharacterStates.dead:              
-                //Debug.Log(rigidBody.velocity);
-                break;
-            case CharacterStates.falling:
-               
-                break;
-            default:
-                break;
+            jumpComponent.StartAction();
         }
+
+        //if (Input.GetMouseButtonDown(1))
+        //{
+        //    parachuteComponent.StartAction();
+        //}
+
+        ////Debug.Log(rigidBody.velocity);
+
+        //switch (playerState)
+        //{
+        //    case CharacterStates.idle:
+        //        break;
+        //    case CharacterStates.jumping:
+        //        break;
+        //    case CharacterStates.moving:
+        //        break;
+        //    case CharacterStates.stunned:
+        //        break;
+        //    case CharacterStates.dead:              
+        //        //Debug.Log(rigidBody.velocity);
+        //        break;
+        //    case CharacterStates.falling:
+               
+        //        break;
+        //    default:
+        //        break;
+        //}
     }
 
 

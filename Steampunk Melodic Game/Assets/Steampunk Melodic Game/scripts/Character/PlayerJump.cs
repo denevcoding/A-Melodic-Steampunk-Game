@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerJump : SteampunkComponent
 {    
+
     Animator animatorPlayer;
     Rigidbody2D rigidBodyPlayer;
 
@@ -31,13 +32,23 @@ public class PlayerJump : SteampunkComponent
         
     }
 
-    // Update is called once per frame
-    public override void Update()
+
+
+
+    public override void StartAction()
     {
+        //base.StartAction();
         if (!CheckPreconditions())
             return;
 
         Jump();
+    }
+
+
+    // Update is called once per frame
+    public override void Update()
+    {
+       
     }
 
 
@@ -56,20 +67,18 @@ public class PlayerJump : SteampunkComponent
 
     private void Jump()
     {
-        if (Input.GetKeyDown(jumpKey))
-        {
-            playerCharacter.SetState(CharacterStates.jumping);
-            playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);
-            animatorPlayer.SetBool("jumping", true);
-            
-        }
+        playerCharacter.GetAnimator().SetBool("jumping", true);
+        playerCharacter.GetRigidBodie().AddForce(Vector3.up * jumpForce);         
     }
+
     private void FixedUpdate()
     {
+        if (playerCharacter.GetPlayerState() != CharacterStates.jumping)
+            return;
+
         if (rigidBodyPlayer.velocity.y < 0)
         {
-            animatorPlayer.SetBool("jumping", false);
-            playerCharacter.SetState(CharacterStates.falling);
+            animatorPlayer.SetBool("jumping", false);            
         }
     }
 }

@@ -19,35 +19,67 @@ public class ParachuteComponent : SteampunkComponent
         
     }
 
-    // Update is called once per frame
-    public override void Update()
-    {      
-        if (Input.GetMouseButton(1) && !playerCharacter.IsGrounded() && playerCharacter.GetPlayerState() != CharacterStates.jumping)
+
+    public override void StartAction()
+    {
+        //base.StartAction();
+        if (playerCharacter.GetPlayerState() != CharacterStates.flying)
         {
             animatorPlayer.SetBool("parachute", true);
             rigidbodyCharacter.gravityScale = 1;
-            playerCharacter.SetState(CharacterStates.flying);
+        }
+    }
+
+    // Update is called once per frame
+    public override void Update()
+    {
+        if (playerCharacter.GetPlayerState() == CharacterStates.flying)
+        {
+            if (playerCharacter.IsGrounded())
+                EndAction();
+        }
+
+        if (Input.GetMouseButton(1))
+        {
+            if (CheckPreconditions() == false)
+                return;
+
+            StartAction();
         }
         else
         {
-            animatorPlayer.SetBool("parachute", false);
-            rigidbodyCharacter.gravityScale = 5;           
+            EndAction();
         }
     }
 
+
+    public void EndAction()
+    {
+        if (playerCharacter.GetPlayerState() == CharacterStates.flying)
+        {
+            animatorPlayer.SetBool("parachute", false);
+            rigidbodyCharacter.gravityScale = 5;
+        }
+    }
+
+
+
+
     public override bool CheckPreconditions()
     {
-        //if (base.CheckPreconditions() == false)
-        //    return false;
-        //else
-        //{
-        //    if (playerCharacter.GetPlayerState() != CharacterStates.falling && )
-        //        return false;
+        if (base.CheckPreconditions() == false)
+            return false;
+        else
+        {
+            if (playerCharacter.IsGrounded() || playerCharacter.GetPlayerState() == CharacterStates.jumping)
+                return false;
 
-        //    if (playerCharacter.isGrounded == true)
-        //        return false;
-        //}
+            if (playerCharacter.isGrounded == true)
+                return false;
+        }
 
         return true;
     }
+
+
 }

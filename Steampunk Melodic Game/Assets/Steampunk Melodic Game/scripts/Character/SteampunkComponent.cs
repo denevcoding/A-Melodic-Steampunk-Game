@@ -13,6 +13,10 @@ public class SteampunkComponent : MonoBehaviour
     // Update is called once per frame
     public virtual void Update() {  }
 
+    public virtual void StartAction() { }
+
+
+
     public virtual bool CheckPreconditions() {
 
         if (playerCharacter.GetPlayerState() == CharacterStates.dead)
