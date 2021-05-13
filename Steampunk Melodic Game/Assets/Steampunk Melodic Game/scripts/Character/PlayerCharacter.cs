@@ -67,6 +67,7 @@ public class PlayerCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 60;
         //camera = GameObject.Find("CM vcam1").GetComponent<CameraHandler>();
         playerState = CharacterStates.idle;
     }
