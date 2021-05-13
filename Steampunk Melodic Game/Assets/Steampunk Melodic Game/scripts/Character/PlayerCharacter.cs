@@ -81,6 +81,9 @@ public class PlayerCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerState == CharacterStates.dead)
+            return;
+
         IsGrounded();
 
         if (Input.GetKeyDown(jumpKey))
@@ -129,11 +132,17 @@ public class PlayerCharacter : MonoBehaviour
         if (rayCastHit.collider != null)
         {
             rayColor = Color.blue;
+            if (rayCastHit.collider.gameObject.layer == LayerMask.NameToLayer("DeathPlatform"))
+            {
+                playerDie();                
+            }
         }
         else
         {
             rayColor = Color.red;
         }
+
+      
 
         Debug.DrawRay(origin, Vector2.down * (boxCollider.bounds.extents.y + extraDistance), rayColor);
         // Debug.Log(rayCastHit.collider);
@@ -169,20 +178,33 @@ public class PlayerCharacter : MonoBehaviour
     }
 
 
+
+    public void playerDie()
+    {
+        if (playerState == CharacterStates.dead)
+            return;
+
+        animatorPlayer.SetTrigger("dying");
+
+        //rigidBody.simulated = false;
+        playerState = CharacterStates.dead;
+
+        rigidBody.angularVelocity = 0f;
+        rigidBody.velocity = Vector2.zero;
+
+    }
+
     //event Called from collition by physic Manager 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("DeathPlatform"))
+        {
+            playerDie();
+        }
+        
+
         if (collision.gameObject.GetComponent<BallExperiment>() != null)
         {
-            animatorPlayer.SetTrigger("dying");
-
-            //rigidBody.simulated = false;
-            playerState = CharacterStates.dead;
-
-            rigidBody.angularVelocity = 0f;
-            rigidBody.velocity = Vector2.zero;
-       
-
             Destroy(collision.gameObject); 
 
           //  camera.CameraShake(1f, 2f);
