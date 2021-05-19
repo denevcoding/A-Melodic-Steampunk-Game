@@ -85,7 +85,10 @@ public class CharacterMovement : SteampunkComponent
     {
         if (!CheckPreconditions())
             return;
-        playerCharacter.GetRigidBodie().velocity = inputVector;
+
+        Vector2 v = playerCharacter.GetRigidBodie().velocity;
+        v.x = inputVector.x; 
+        playerCharacter.GetRigidBodie().velocity = v;
       
     }
 }
