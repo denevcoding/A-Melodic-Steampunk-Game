@@ -35,11 +35,17 @@ public class PlayerCharacter : MonoBehaviour
     private KeyCode parachuteKey;
 
 
-    public bool isGrounded;
 
 
+    //Ground Interaction
     [SerializeField]
     private LayerMask platformMask;
+    public bool isGrounded;
+
+    public float slopeLimit;
+
+
+
 
 
     void Awake()
@@ -127,7 +133,7 @@ public class PlayerCharacter : MonoBehaviour
 
         Vector2 origin = boxCollider.bounds.center;
 
-        RaycastHit2D rayCastHit = Physics2D.Raycast(origin, Vector2.down, boxCollider.bounds.extents.y + extraDistance, platformMask);
+        RaycastHit2D rayCastHit = Physics2D.BoxCast(origin, boxCollider.bounds.size, 0f, Vector2.down, extraDistance, platformMask);
         Color rayColor;
 
         if (rayCastHit.collider != null)
@@ -135,7 +141,7 @@ public class PlayerCharacter : MonoBehaviour
             rayColor = Color.blue;
             if (rayCastHit.collider.gameObject.layer == LayerMask.NameToLayer("DeathPlatform"))
             {
-                playerDie();                
+                playerDie();
             }
         }
         else
@@ -143,12 +149,21 @@ public class PlayerCharacter : MonoBehaviour
             rayColor = Color.red;
         }
 
-      
 
-        Debug.DrawRay(origin, Vector2.down * (boxCollider.bounds.extents.y + extraDistance), rayColor);
+        //Detecting the slope     
+        RaycastHit2D surfaceNormal = Physics2D.Raycast(rayCastHit.point, rayCastHit.normal * 1.8f);
+        Debug.DrawRay(rayCastHit.point, rayCastHit.normal * 1.8f, Color.magenta);
+
+        float angle = Vector2.Angle(Vector2.right, rayCastHit.normal);
+        Debug.Log("slope Angle = " + angle);
+
+        Debug.DrawRay(boxCollider.bounds.center + new Vector3(boxCollider.bounds.extents.x, 0), Vector2.down * (boxCollider.bounds.extents.y + extraDistance), rayColor);
+        Debug.DrawRay(boxCollider.bounds.center - new Vector3(boxCollider.bounds.extents.x, 0), Vector2.down * (boxCollider.bounds.extents.y + extraDistance), rayColor);
+        Debug.DrawRay(boxCollider.bounds.center - new Vector3(boxCollider.bounds.extents.x, boxCollider.bounds.extents.y), Vector2.right * (boxCollider.bounds.extents.y + extraDistance), rayColor);
         // Debug.Log(rayCastHit.collider);
 
         animatorPlayer.SetBool("isGrounded", rayCastHit.collider != null);
+
         return rayCastHit.collider != null;
     }
 

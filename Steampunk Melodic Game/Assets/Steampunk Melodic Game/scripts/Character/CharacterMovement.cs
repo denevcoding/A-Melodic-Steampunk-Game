@@ -8,6 +8,9 @@ public class CharacterMovement : SteampunkComponent
     public float groundSpeed = 3.0f;
     public float airSpeed = 3.0f;
 
+    [HideInInspector] public bool canMove = true;
+    [HideInInspector] public bool canFlip = true;
+
 
     Vector3 inputVector = Vector3.zero;
     bool isRight = true;
