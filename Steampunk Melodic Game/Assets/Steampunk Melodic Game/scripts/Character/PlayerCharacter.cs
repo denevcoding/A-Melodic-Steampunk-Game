@@ -25,6 +25,7 @@ public class PlayerCharacter : MonoBehaviour
 
     private PlayerJump jumpComponent;
     private ParachuteComponent parachuteComponent;
+    private AudioCharacter audioManager;
 
     public CameraHandler camera;
     public CharacterStates playerState;
@@ -46,12 +47,18 @@ public class PlayerCharacter : MonoBehaviour
 
 
 
+    [Header("Audio Properties")]
+    public AudioClip introSong;
+    public AudioClip dieDialogClip;
+    
+
 
 
     void Awake()
     {
         jumpComponent = GetComponent<PlayerJump>();
         parachuteComponent = GetComponent<ParachuteComponent>();
+        audioManager = GetComponent<AudioCharacter>();
 
         boxCollider = GetComponent<CapsuleCollider2D>();
         rigidBody = GetComponent<Rigidbody2D>();
@@ -76,6 +83,8 @@ public class PlayerCharacter : MonoBehaviour
         Application.targetFrameRate = 60;
         //camera = GameObject.Find("CM vcam1").GetComponent<CameraHandler>();
         playerState = CharacterStates.idle;
+
+        
     }
 
     public void InitPlayer(Vector3 initPosition)
@@ -95,6 +104,7 @@ public class PlayerCharacter : MonoBehaviour
 
         if (Input.GetKeyDown(jumpKey))
         {
+            audioManager.PlayDialog(introSong);
             jumpComponent.StartAction();
         }
 
@@ -180,6 +190,10 @@ public class PlayerCharacter : MonoBehaviour
     {
         return animatorPlayer;
     }
+    public AudioCharacter GetAudioManager()
+    {
+        return audioManager;
+    }
     #endregion  
 
 
@@ -199,6 +213,8 @@ public class PlayerCharacter : MonoBehaviour
     {
         if (playerState == CharacterStates.dead)
             return;
+
+        audioManager.PlaySFX(dieDialogClip);
 
         animatorPlayer.SetTrigger("dying");
 
