@@ -16,10 +16,7 @@ public enum CharacterStates
     flying = 6,
 }
 
-public void SphereCast()
-{
-    Physics2D.CircleCast(apuntador.transform);
-}
+
 
 public class PlayerCharacter : MonoBehaviour
 {
