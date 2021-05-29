@@ -16,6 +16,10 @@ public enum CharacterStates
     flying = 6,
 }
 
+public void SphereCast()
+{
+    Physics2D.CircleCast(apuntador.transform);
+}
 
 public class PlayerCharacter : MonoBehaviour
 {
@@ -34,6 +38,8 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField]
     private KeyCode jumpKey;
     private KeyCode parachuteKey;
+
+
 
 
 
@@ -84,7 +90,8 @@ public class PlayerCharacter : MonoBehaviour
         //camera = GameObject.Find("CM vcam1").GetComponent<CameraHandler>();
         playerState = CharacterStates.idle;
 
-        
+       
+       
     }
 
     public void InitPlayer(Vector3 initPosition)
